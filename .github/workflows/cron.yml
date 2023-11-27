@@ -2,11 +2,11 @@ name: RCZ cron
 
 on:
   schedule:
-    - cron:  '0,18,30,45 * * * *'
+    - cron:  '*/5 * * * *'
 
 jobs:
   poll:
     runs-on: ubuntu-latest
     steps:
-      - name: Run a one-line script
+      - name: Poll RCZ Glitch
         run: curl -f https://daffodil-lucky-note.glitch.me/poll
