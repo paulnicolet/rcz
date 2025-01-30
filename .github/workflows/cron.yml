@@ -1,12 +1,12 @@
-name: RCZ cron
+# name: RCZ cron
 
-on:
-  schedule:
-    - cron:  '*/15 * * * *'
+# on:
+#   schedule:
+#     - cron:  '*/15 * * * *'
 
-jobs:
-  poll:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Poll RCZ Glitch
-        run: curl -f https://daffodil-lucky-note.glitch.me/poll
+# jobs:
+#   poll:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Poll RCZ Glitch
+#         run: curl -f https://daffodil-lucky-note.glitch.me/poll
